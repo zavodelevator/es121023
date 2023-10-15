@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @firm %>
+
+<div>
+  <%= link_to "Edit this firm", edit_firm_path(@firm) %> |
+  <%= link_to "Back to firms", firms_path %>
+
+  <%= button_to "Destroy this firm", @firm, method: :delete %>
+</div>
