@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="calc_sh_t.css">
+
+
+
+<script> 
+
+</script>
+
+    </head>
+  <body>
+
+
+      
+      <div class="container">
+    
+        <div class="card">
+          <div class="card-header">
+                Транспортер шнековий
+          </div>
+          <div class="card-body">
+            <div class="row">
+
+              <div class="col-sm">
+                <div class="card mb-3">
+                  <img class="card-img-top" src="/img/shnek_trans/sh_t_21_krot.jpg" alt="Card image cap">
+                  <!-- <div class="card-body">
+                      <h5 class="card-title">Транспортер шнековий</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div> -->
+                </div> 
+
+                <div class="card_price">
+                  <div class="card-body">Розшифровка ціни</div>                
+                </div>
+
+              </div>
+
+ 
+
+              <div class="col-sm">
+
+                <div class="form-group">
+
+
+
+
+                  <label for="params_trans">Діаметер труби шнека мм.</label>
+                  <select class="form-control" id="params_trans">
+                    <option value="102,4050,4500,2048">102</option>
+                    <option value="127,4116,4500,2486">127</option>
+                    <option value="159,4512,4500,2914">159</option>
+                    <option value="219,7350,4500,4384">219</option>
+                    <option value="250,8000,4500,5000">250</option>
+                    <option value="300,9000,4500,6000">300</option>
+
+                  </select>
+
+
+                  <label for="length_trans">Довжина шнека</label>
+                  <select class="form-control" id="length_trans">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                      
+                  </select>
+
+                  <div class="form-check form-switch">
+                    <input class="form-check-input radio_boonker" type="checkbox" id="flexSwitchCheckChecked_1">
+                    <label class="form-check-label" for="flexSwitchCheckChecked_1">Бункер</label>
+                  </div>
+
+                  <div class="form-check form-switch">
+                    <input class="form-check-input radio_pidstavka" type="checkbox" id="flexSwitchCheckChecked_2">
+                    <label class="form-check-label" for="flexSwitchCheckChecked_2">Підставка</label>
+                  </div>
+
+                  <div class="form-check form-switch">
+                    <input class="form-check-input radio_krot" type="checkbox" id="flexSwitchCheckChecked_krot">
+                    <label class="form-check-label" for="flexSwitchCheckChecked_krot">Крот</label>
+                  </div>
+                  
+                  <div class="form-check form-switch">
+                    <input class="form-check-input radio_zholob" type="checkbox" id="flexSwitchCheckChecked_zholob">
+                    <label class="form-check-label" for="flexSwitchCheckChecked_zholob">Жолоб</label>
+                  </div>
+
+                  <br>
+                  <br>
+                  <h6>Тип Двигуна</h6> <span class="need_engyne" style="float: right;"></span>
+
+                  <input class="form-check-input form-check-input_engyne" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Двигун
+                  </label>
+
+                  <input class=" form-check-input input_two form-check-input_engyne form-check-input_motor_engyne" type="radio" name="exampleRadios" id="btn_engyne_reduktor" value="option1">
+                  <label class="form-check-label label_two" for="exampleRadios2">
+                    Мотор редуктор
+                  </label>
+                  
+
+
+                  <select class="form-control" id="engine_params">
+ 
+                  </select>
+
+                  <br/>
+                  <hr/>
+
+                  <button type="button" id="calck_price" class="btn btn-dark" >Розрахувати</button>
+                  
+                  <br/>
+                  <div class="table-responsive">
+                    <table class="table table-sm table-borderless mb-0">
+                      <tbody>
+                        <tr>
+                          <th class="pl-0 w-25" scope="row"><strong>Ціна</strong></th>
+                          <td> <p>
+                                  <span class="mr-3">
+                                    <strong>
+                                      <span class="price">
+                                        
+                                      </span>
+                                    </strong>
+                                  </span>
+                                </p>
+                              </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+
+
+                  </div>
+
+                  
+
+                </div>
+
+              </div>
+
+            </div>    
+            
+            <hr>
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row"> 
+
+              <div class="col-sm">
+                
+                <h3>Продуктивність транспортера</h3>
+                <h3 class="text-danger">! В розробці поки-що не працює</h3>
+                
+                <div id="content_weight_product" style="display: none;">
+
+                  <label for="weight_product">Продукт насипна маса на т./м. куб.</label>
+                  <select class="form-control" id="weight_product">
+                    <option value="0.1">0.1</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.3">0.3</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.5">0.5</option>
+                    <option value="0.6">0.6</option>
+                    <option selected value="0.7">0.7 зерно пшениці</option>                          
+                    <option value="0.8">0.8</option>
+                    <option value="0.9">0.9</option>
+                    <option value="1">1</option>
+                    <option value="1.1">1.1</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.5"> 1.5</option>
+                    <option value="1.75">1.75</option>
+                    <option value="2">2</option>
+                  </select>
+                  
+                  <label for="working_angle">Кут роботи (градусів)</label>
+                  <select class="form-control" id="working_angle">
+                    <option value="0" selected>0</option>
+                    <option value="15">15°</option>
+                    <option value="30">30°</option>
+                    <option value="45">45°</option>
+                    <option value="60">60°</option>
+                    <option value="90">90°</option>
+                  </select>
+
+
+                </div>
+
+                
+                <br>
+                <button type="button" id="calck_production" class="btn btn-dark" >Розрахувати</button>
+                    
+                
+              </div>
+
+              <div class="col-sm">
+                  
+                <br/>
+                <div class="table-responsive form_productation_sh_tr">
+                  <table class="table table-sm table-borderless mb-0">
+                    <tbody>
+                      <tr>
+                        <th class="pl-0 w-25" scope="row"><strong>Продуктивність</strong></th>
+                        <td> <p>
+                                <span class="mr-3">
+                                  <strong>
+                                    <span class="production_sh">
+                                      
+                                    </span>
+                                  </strong>
+                                </span>
+                              </p>
+                            </td>
+                      </tr>
+
+                      
+   
+                    </tbody>
+                  </table>
+
+                  <div id="engine_params_block">
+
+                  </div>
+
+                  <div id="pipe_group">
+
+                  </div>
+
+                </div>
+    
+              </div>
+
+            
+          </div> 
+        </div>
+   
+      </div>
+            
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="calc_sh_t2_new.js"></script>
+    
+
+
+  </body>
+</html>
