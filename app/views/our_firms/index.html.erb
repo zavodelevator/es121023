@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Our firms</h1>
+
+<div id="our_firms">
+  <% @our_firms.each do |our_firm| %>
+    <%= render our_firm %>
+    <p>
+      <%= link_to "Show this our firm", our_firm %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New our firm", new_our_firm_path %>
