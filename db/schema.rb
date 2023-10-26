@@ -35,6 +35,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_25_071737) do
   create_table "orders_products", id: false, force: :cascade do |t|
     t.integer "product_id", null: false
     t.integer "order_id", null: false
+    t.index ["order_id", "product_id"], name: "index_orders_products_on_order_id_and_product_id"
+    t.index ["product_id", "order_id"], name: "index_orders_products_on_product_id_and_order_id", unique: true
   end
 
   create_table "our_firms", force: :cascade do |t|
