@@ -1,6 +1,5 @@
+//= require l_b_menu
 
 
-
-  alert("Hello, World");
 
 

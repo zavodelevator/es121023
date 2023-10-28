@@ -9,18 +9,27 @@
 # 'price_₴': ['Ціна ₴', ''],
 # 'price_$': ['Ціна $', ''],
 
+# t.string "name"
+# t.string "description"
+# t.string "id_s"
+# t.string "tags"
+# t.string "group_product"
+# t.string "sten_on"
+# t.string "consists_of"
+# t.string "price"
+# t.text "data"
+# t.datetime "created_at", null: false
+# t.datetime "updated_at", null: false
 
 
   aa = {
     'name': ['Назва', ''],
     'description': ['Опис', ''],
-    'id': ['id', ''],
+    'id_s': ['id_s', ''],
     'tags': ['Теги', []],
     'group_product': ['Группа продуктов', ''],
     'sten_on': ['Встановлюється на', ''],
     'consists_of': ['складається з', ''],
-    'kof_markup': ['Коф націнки', ''],
-    'price_₴': ['Ціна ₴', ''],
     'price_$': ['Ціна $', ''],
     'data': {  
       'personal_data': {
@@ -51,6 +60,8 @@
       }
     }  
   }
+
+
 
 def form_build(a)
   aanny(a)
