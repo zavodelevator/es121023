@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+
+ #slide-out-menu {
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+#slide-out-menu a {
+  color: black;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.icon-from-flaticon {
+  /* You might need additional styles depending on the actual icon set you use */
+}
